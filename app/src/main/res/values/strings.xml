@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Dev Lockscreen</string>
+    <array name="skills">
+        <item>alacrity</item>
+        <item>blast</item>
+        <item>coldsnap</item>
+        <item>emp</item>
+        <item>meteor</item>
+        <item>spirit</item>
+        <item>sunstrike</item>
+        <item>tornado</item>
+        <item>walk</item>
+        <item>wall</item>
+    </array>
+</resources>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/back"
+        android:alpha="0.05"/>
+
+    <ImageView
+        android:id="@+id/imgSkill"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center_horizontal"
+        android:focusableInTouchMode="false"
+        android:src="@drawable/alacrity"
+        android:elevation="10dp"
+        android:cropToPadding="false"
+        android:adjustViewBounds="false"
+        android:layout_marginBottom="39dp"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:id="@+id/linearLayout2"
+        android:layout_above="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="37dp">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:id="@+id/imgSlot1"
+            android:layout_gravity="center_horizontal"
+            android:focusableInTouchMode="false"
+            android:cropToPadding="false"
+            android:adjustViewBounds="false"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/imageView3"
+            android:background="@drawable/placeholder"
+            android:layout_margin="2dp" />
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:id="@+id/imgSlot2"
+            android:layout_gravity="center_horizontal"
+            android:focusableInTouchMode="false"
+            android:cropToPadding="false"
+            android:adjustViewBounds="false"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/imageView3"
+            android:background="@drawable/placeholder"
+            android:layout_margin="2dp" />
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:id="@+id/imgSlot3"
+            android:layout_gravity="center_horizontal"
+            android:focusableInTouchMode="false"
+            android:cropToPadding="false"
+            android:adjustViewBounds="false"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/imageView3"
+            android:background="@drawable/placeholder"
+            android:layout_margin="2dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:id="@+id/linearLayout">
+
+        <ImageView
+            android:contentDescription="quas"
+            android:onClick="putSkillPoint"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgWex"
+            android:layout_gravity="center_horizontal"
+            android:focusableInTouchMode="false"
+            android:cropToPadding="false"
+            android:adjustViewBounds="false"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/imgQuas"
+            android:src="@drawable/quas"
+            android:padding="10dp" />
+
+        <ImageView
+            android:contentDescription="wex"
+            android:onClick="putSkillPoint"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgQuas"
+            android:layout_gravity="center_horizontal"
+            android:focusableInTouchMode="false"
+            android:cropToPadding="false"
+            android:adjustViewBounds="false"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/wex"
+            android:padding="10dp" />
+
+        <ImageView
+            android:contentDescription="exort"
+            android:onClick="putSkillPoint"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgExort"
+            android:layout_gravity="center_horizontal"
+            android:focusableInTouchMode="false"
+            android:cropToPadding="false"
+            android:adjustViewBounds="false"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/imgWex"
+            android:src="@drawable/exort"
+            android:padding="10dp" />
+
+        <ImageView
+            android:id="@+id/imgInvoke"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:focusableInTouchMode="false"
+            android:cropToPadding="false"
+            android:src="@drawable/invoke"
+            android:adjustViewBounds="false"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/imgWex"
+            android:padding="10dp" />
+    </LinearLayout>
+
+</RelativeLayout>
